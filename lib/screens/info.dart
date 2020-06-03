@@ -1,27 +1,25 @@
-import 'package:covid_19/constant.dart';
-import 'package:covid_19/widgets/header.dart';
+import 'package:covid_19/utilities/constant.dart';
+import 'package:covid_19/utilities/header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class InfoScreen extends StatefulWidget {
+class Info extends StatefulWidget {
   @override
-  _InfoScreenState createState() => _InfoScreenState();
+  _InfoState createState() => _InfoState();
 }
 
-class _InfoScreenState extends State<InfoScreen> {
+class _InfoState extends State<Info> {
   final controller = ScrollController();
   double offset = 0;
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     controller.addListener(onScroll);
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     controller.dispose();
     super.dispose();
   }

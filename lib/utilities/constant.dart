@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+const apiKey = "AIzaSyCxEiEcbR3qRd7WFB09BN4hW2hF8DU2jgQ";
+
 // Colors
 const kBackgroundColor = Color(0xFFFEFEFE);
 const kTitleTextColor = Color(0xFF303030);
@@ -24,4 +26,12 @@ const kTitleTextstyle = TextStyle(
   fontSize: 18,
   color: kTitleTextColor,
   fontWeight: FontWeight.bold,
+);
+
+const List<String> countries = [
+  
+];
+const kIconTextStyle = TextStyle(
+  fontSize: 30,
+  
 );

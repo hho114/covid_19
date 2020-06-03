@@ -1,5 +1,5 @@
-import 'package:covid_19/constant.dart';
-import 'package:covid_19/info_screen.dart';
+import 'package:covid_19/utilities/constant.dart';
+import 'package:covid_19/screens/info.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -41,19 +41,19 @@ class _HeaderState extends State<Header> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
-            GestureDetector(
+            (widget.textTop == "All you need")?GestureDetector(
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return InfoScreen();
+                      return Info();
                     },
                   ),
                 );
               },
               child: SvgPicture.asset("assets/icons/menu.svg"),
-            ),
+            ):SizedBox(height:0),
             SizedBox(height: 20),
             Expanded(
               child: Stack(
@@ -77,7 +77,7 @@ class _HeaderState extends State<Header> {
                       ),
                     ),
                   ),
-                  Container(), // I dont know why it can't work without container
+                  // Container(), // I dont know why it can't work without container
                 ],
               ),
             ),
