@@ -1,16 +1,19 @@
 # covid_19
 
-A new Flutter project.
+This project implement a mobile application which have data tracking for corona virus update all around the world, it fetch json data from [TrackCorona](https://www.trackcorona.live/) API of Virginia Tech University. I want to develop this project to learn more about how to work with JSON API and Flutter because the JSON gained such rapid popularity recently.
 
-## Getting Started
+## To Do
 
-This project is a starting point for a Flutter application.
+* [x] Set up project
+* [x] Fetch data from API
+* [x] Get Data by Country name
+* [ ] Get Data by City name
+* [ ] Update different UI
+* [ ] Update routes and detail pages
+* [ ] Update Info page
 
-A few resources to get you started if this is your first Flutter project:
+## Credits
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+  [Flutter Covid 19 UI](https://github.com/abuanwar072/Covid-19-Flutter-UI)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  [TrackCorona](https://www.trackcorona.live/)
